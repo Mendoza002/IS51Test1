@@ -41,3 +41,29 @@ main
 
 main
 """
+
+def saloption1():
+    return 100 * 10
+
+def saloption2():
+    salaryamount = 1
+    salarylist1 = []
+    for i in range(0, 10):
+        salarylist1.append(salaryamount)
+        salaryamount *= 2
+    total = sum(salarylist1)
+    return total
+
+def main():
+    answer = ""
+    var1 = saloption1()
+    var2 = saloption2()
+    if var1 == var2:
+        answer = "Option 1 and Option 2 pays the same"
+    elif var1 < var2:
+        answer = "Option 2 is better"
+    else:
+        answer = "Option 1 is better"
+    print(answer)
+
+main()
